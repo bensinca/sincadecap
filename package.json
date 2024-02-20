@@ -2,19 +2,32 @@
   "name": "sincadecap",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "pages/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bensinca/sincadecap.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Beniamin Sinca",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bensinca/sincadecap/issues"
   },
-  "homepage": "https://github.com/bensinca/sincadecap#readme"
+  "homepage": "https://github.com/bensinca/sincadecap#readme",
+  "dependencies": {
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "frontmatter-markdown-loader": "^3.7.0"
+  }
 }
